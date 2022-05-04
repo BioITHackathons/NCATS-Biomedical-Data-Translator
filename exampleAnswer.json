@@ -1,0 +1,388 @@
+{
+  "model": "tr_ars.message",
+  "pk": "82040b87-7af3-447a-96d9-7154b430d5cd",
+  "fields": {
+    "name": "",
+    "code": 200,
+    "status": "Done",
+    "actor": 3,
+    "timestamp": "2022-05-02T19:38:03.673Z",
+    "data": {
+      "workflow": [
+        {
+          "id": "lookup"
+        }
+      ],
+      "message": {
+        "query_graph": {
+          "edges": {
+            "e00": {
+              "subject": "n01",
+              "object": "n00",
+              "predicates": [
+                "biolink:location_of"
+              ]
+            }
+          },
+          "nodes": {
+            "n00": {
+              "ids": [
+                "NCBIGene:5354"
+              ],
+              "categories": [
+                "biolink:Disease",
+                "biolink:Gene"
+              ]
+            },
+            "n01": {
+              "categories": [
+                "biolink:Cell"
+              ]
+            }
+          }
+        },
+        "knowledge_graph": {
+          "nodes": {
+            "NCBIGene:5354": {
+              "categories": [
+                "biolink:Gene"
+              ],
+              "name": "PLP1",
+              "attributes": [
+                {
+                  "attribute_type_id": "biolink:xref",
+                  "value": [
+                    "NCBIGene:5354",
+                    "ENSEMBL:ENSG00000123560",
+                    "HGNC:9086",
+                    "OMIM:300401",
+                    "UMLS:C1418654",
+                    "UniProtKB:A0A0S2Z4D4",
+                    "UniProtKB:A8K9L3",
+                    "UniProtKB:B4DI30",
+                    "UniProtKB:P60201",
+                    "PR:P60201",
+                    "UMLS:C1175541"
+                  ]
+                },
+                {
+                  "attribute_type_id": "biolink:synonym",
+                  "value": [
+                    "PLP1",
+                    "PLP1 gene",
+                    "A0A0S2Z4D4_HUMAN Proteolipid protein 1 isoform 1 (Fragment) (trembl)",
+                    "A8K9L3_HUMAN Proteolipid protein 1 (Pelizaeus-Merzbacher disease, spastic paraplegia 2, uncomplicated), isoform CRA_b (trembl)",
+                    "B4DI30_HUMAN cDNA FLJ54051, highly similar to Myelin proteolipid protein (trembl)",
+                    "MYPR_HUMAN Myelin proteolipid protein (sprot)",
+                    "myelin proteolipid protein (human)",
+                    "PLP1 protein, human"
+                  ]
+                },
+                {
+                  "attribute_type_id": "num_source_nodes",
+                  "value": 1
+                },
+                {
+                  "attribute_type_id": "num_target_nodes",
+                  "value": 0
+                },
+                {
+                  "attribute_type_id": "source_qg_nodes",
+                  "value": [
+                    "n01"
+                  ]
+                },
+                {
+                  "attribute_type_id": "target_qg_nodes",
+                  "value": []
+                }
+              ]
+            },
+            "UMLS:C0028944": {
+              "categories": [
+                "biolink:Cell"
+              ],
+              "name": "Oligodendroglia",
+              "attributes": [
+                {
+                  "attribute_type_id": "biolink:xref",
+                  "value": [
+                    "UMLS:C0028944",
+                    "NCIT:C12618",
+                    "SNOMEDCT:66254009"
+                  ]
+                },
+                {
+                  "attribute_type_id": "biolink:synonym",
+                  "value": [
+                    "Oligodendroglia",
+                    "Oligodendrocyte"
+                  ]
+                },
+                {
+                  "attribute_type_id": "num_source_nodes",
+                  "value": 0
+                },
+                {
+                  "attribute_type_id": "num_target_nodes",
+                  "value": 1
+                },
+                {
+                  "attribute_type_id": "source_qg_nodes",
+                  "value": []
+                },
+                {
+                  "attribute_type_id": "target_qg_nodes",
+                  "value": [
+                    "n00"
+                  ]
+                }
+              ]
+            }
+          },
+          "edges": {
+            "c052d6d04324262b39e029ae01e6b2ed": {
+              "predicate": "biolink:location_of",
+              "subject": "UMLS:C0028944",
+              "object": "NCBIGene:5354",
+              "attributes": [
+                {
+                  "attribute_type_id": "biolink:aggregator_knowledge_source",
+                  "value": [
+                    "infores:biothings-explorer"
+                  ],
+                  "value_type_id": "biolink:InformationResource"
+                },
+                {
+                  "attribute_type_id": "biolink:primary_knowledge_source",
+                  "value": [
+                    "infores:semmeddb"
+                  ],
+                  "value_type_id": "biolink:InformationResource"
+                },
+                {
+                  "attribute_type_id": "biolink:aggregator_knowledge_source",
+                  "value": [
+                    "infores:biothings-semmeddb"
+                  ],
+                  "value_type_id": "biolink:InformationResource"
+                },
+                {
+                  "attribute_type_id": "biolink:publications",
+                  "value": [
+                    "PMID:33649472",
+                    "PMID:34230963"
+                  ]
+                },
+                {
+                  "attribute_type_id": "biolink:original_object",
+                  "value": "C1418654"
+                },
+                {
+                  "attribute_type_id": "biolink:original_predicate",
+                  "value": "LOCATION_OF"
+                },
+                {
+                  "attribute_type_id": "biolink:original_subject",
+                  "value": "C0028944"
+                },
+                {
+                  "attribute_type_id": "original_object_name",
+                  "value": "PLP1 gene"
+                },
+                {
+                  "attribute_type_id": "original_subject_name",
+                  "value": "Oligodendroglia"
+                }
+              ]
+            }
+          }
+        },
+        "results": [
+          {
+            "node_bindings": {
+              "n01": [
+                {
+                  "id": "UMLS:C0028944"
+                }
+              ],
+              "n00": [
+                {
+                  "id": "NCBIGene:5354"
+                }
+              ]
+            },
+            "edge_bindings": {
+              "e00": [
+                {
+                  "id": "c052d6d04324262b39e029ae01e6b2ed"
+                }
+              ]
+            },
+            "score": 1.7240070362107724
+          }
+        ]
+      },
+      "logs": [
+        {
+          "timestamp": "2022-05-02T19:38:06.542Z",
+          "level": "INFO",
+          "message": "job status available at: http://api.bte.ncats.io/v1/check_query_status/KwXe3Q6I0J",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:04.651Z",
+          "level": "WARNING",
+          "message": "The following APIs were unavailable at the time of execution: Service Provider TRAPI",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.004Z",
+          "level": "INFO",
+          "message": "Node n00 with id [NCBIGene:5354] and category [biolink:Disease] augmented with category [biolink:Gene] inferred from id.",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.004Z",
+          "level": "DEBUG",
+          "message": "BTE identified 2 qNodes from your query graph",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.004Z",
+          "level": "DEBUG",
+          "message": "BTE identified 1 qEdges from your query graph",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.094Z",
+          "level": "INFO",
+          "message": "Executing e00 (reversed): n01 <-- n00",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.340Z",
+          "level": "DEBUG",
+          "message": "REDIS cache is  enabled.",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.343Z",
+          "level": "DEBUG",
+          "message": "BTE is trying to find metaKG edges (smartAPI registry, x-bte annotation) connecting from Disease,Gene to Cell with predicate located_in",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.429Z",
+          "level": "DEBUG",
+          "message": "BTE found 3 metaKG edges corresponding to e00. These metaKG edges comes from 2 unique APIs. They are BioThings SEMMEDDB API,Automat Uberongraph (trapi v-1.2.0)",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.430Z",
+          "level": "DEBUG",
+          "message": "BTE found 3 metaKG for this batch.",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.430Z",
+          "level": "DEBUG",
+          "message": "call-apis: Resolving ID feature is turned on",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.430Z",
+          "level": "DEBUG",
+          "message": "call-apis: Number of API Edges received is 3",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.638Z",
+          "level": "DEBUG",
+          "message": "call-apis: Successful POST https://biothings.ncats.io/semmeddb (1 ID): Disease > located_in > Cell (obtained 2 records, took 204ms)",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.640Z",
+          "level": "DEBUG",
+          "message": "call-apis: Successful POST https://biothings.ncats.io/semmeddb (1 ID): Gene > located_in > Cell (obtained 2 records, took 204ms)",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.879Z",
+          "level": "DEBUG",
+          "message": "call-apis: Successful POST https://automat.renci.org/uberongraph/1.2 (1 ID): Disease > located_in > Cell (obtained 0 records, took 445ms)",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.880Z",
+          "level": "DEBUG",
+          "message": "call-apis: Total number of records returned for this query is 4",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:06.518Z",
+          "level": "DEBUG",
+          "message": "call-apis: qEdge queries complete in 449ms",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:06.528Z",
+          "level": "INFO",
+          "message": "e00 execution: 3 queries (3 success/0 fail) and (0) cached qEdges return (4) records",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.094Z",
+          "level": "DEBUG",
+          "message": "Edge manager is managing 1 qEdges.",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:05.094Z",
+          "level": "DEBUG",
+          "message": "Edge manager is sending next qEdge 'e00' for execution.",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:06.529Z",
+          "level": "DEBUG",
+          "message": "'e00' kept (4) / dropped (0) records.",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:06.529Z",
+          "level": "INFO",
+          "message": "'e00' keeps (4) records!",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:06.529Z",
+          "level": "DEBUG",
+          "message": "Edge manager collected (4) records!",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:06.542Z",
+          "level": "DEBUG",
+          "message": "Successfully scored 1 results, couldn't score 0 results.",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:06.542Z",
+          "level": "INFO",
+          "message": "Execution Summary: (2) nodes / (1) edges / (1) results; (2/3) queries returned results from (1) unique APIs ",
+          "code": null
+        },
+        {
+          "timestamp": "2022-05-02T19:38:06.542Z",
+          "level": "INFO",
+          "message": "APIs: BioThings SEMMEDDB API",
+          "code": null
+        }
+      ]
+    },
+    "url": "https://api.bte.ncats.io/v1/asyncquery",
+    "ref": "054272f9-cf05-4a2f-9a9b-ca4b79cf927c"
+  }
+}
